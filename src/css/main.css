@@ -1,0 +1,102 @@
+.form-section {
+  display: none;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+  margin: auto;
+  width: 15rem;
+  box-shadow: 0 5px 15px 4px rgba(0, 0, 0, 0.1);
+}
+
+form > input {
+  padding: 0.5rem;
+}
+
+form > button {
+  align-self: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+hr {
+  border: 2px solid black;
+}
+
+#floor-container,
+#lift-container {
+  height: 10rem;
+  margin-top: 2rem;
+}
+
+#floor-container > div,
+#lift-container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-right: 1rem;
+  gap: 5rem;
+}
+
+#floor-container:first-child .btn-group > button:first-child {
+  display: none;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-group > button {
+  padding: 0.4rem 0.8rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-group > button:first-child {
+  background-color: #00b301;
+}
+
+.btn-group > button:last-child {
+  background-color: #f8ba01;
+}
+
+#lifts {
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+}
+
+#lifts > div {
+  height: 100%;
+  width: 6rem;
+  margin-right: 6rem;
+  background-color: #02a3ff;
+}
+
+/* #lifts div {
+  transition: transform 2s ease-in-out;
+} */
+
+/* #lifts div:first-of-type {
+  transform: translateY(calc(-12.5rem - 12 * 9rem));
+} */
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
